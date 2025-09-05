@@ -1,0 +1,11 @@
+megs: 32
+romimage: file=/usr/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/share/vgabios/vgabios.bin
+
+display_library: sdl2
+
+# Boot our kernel
+boot: disk
+ata0-master: type=disk, path=/home/akshaj/ArchaOS/ArchaOS.iso, mode=flat
+
+log: bochs.log
